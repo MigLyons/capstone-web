@@ -25,7 +25,7 @@
             <a href="./systems_modeling.html">Systems Modeling</a>
             <a href="./prototype.html">High-fidelity Prototype</a>
             <a href="./design_crits.html">Design Crits</a>
-            <a href="./final_implementation.html">Final Product</a>
+            <a href="./final_implementation.html">Final Implementation</a>
         </div>
 
         <header id="top" class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-12peh0i" style="background-color: darkblue;">
@@ -52,19 +52,25 @@
                         <h1>Final Implementation</h1>
                         <p>Our final implementation brings together all aspects of our design into a cohesive and interactive web application. Below are screenshots highlighting key components of our deployed system:</p>
 
-                        <h3>Login Page</h3>
+                        <p>During the spring semester, our team shifted focus entirely to implementation. We built and deployed a full-stack web application using Azure resources such as App Services, Blob Storage, Azure SQL Database, and Logic Apps. Our backend is powered by a Spring Boot API, and we automated the profile import process end-to-end using Power Automate and an Azure Function App that detects new profiles and invokes the API.</p>
+
+                        <p>We implemented robust integration and unit tests to ensure system reliability, particularly for the profile parsing, database storage, and search logic. Our testing workflows helped us catch edge cases early and improve the system’s resilience before deployment.</p>
+
+                        <p>The client was extremely pleased with the final product. They appreciated the streamlined search experience, the ease of exporting profiles, and the ability to fully automate profile ingestion from SharePoint. They expressed strong interest in adopting this tool internally, and we are confident that it is likely to be implemented within their consultant management processes.</p>
+
+                        <h3>🔐 Login Page</h3>
                         <img src="./images/finalLogin.png" alt="Login Page" style="max-width:100%; margin-bottom: 10px;" />
                         <p>The login screen uses Microsoft authentication to verify users before accessing the application. This ensures that only authorized Cognizant employees can view or manage consultant profiles.</p>
 
-                        <h3>Profile Search</h3>
+                        <h3>🔎 Profile Search</h3>
                         <img src="./images/finalSearch.png" alt="Search Page" style="max-width:100%; margin-bottom: 10px;" />
                         <p>Once authenticated, users are taken to the search screen. Here, Team Leads can enter keywords (e.g., "azure", "devops") to filter relevant profiles. Recent searches are also displayed to improve usability and context during staffing sessions.</p>
 
-                        <h3>Search Results</h3>
+                        <h3>📋 Search Results</h3>
                         <img src="./images/finalSearchResults.png" alt="Search Results" style="max-width:100%; margin-bottom: 10px;" />
                         <p>Search results are displayed in card format, showing consultant names, a brief summary, and a “View Profile” button. This layout allows quick comparison of candidate expertise to make informed staffing decisions.</p>
 
-                        <h3>Full Profile View</h3>
+                        <h3>👤 Full Profile View</h3>
                         <img src="./images/finalProfileView.png" alt="Profile Detail View" style="max-width:100%; margin-bottom: 10px;" />
                         <p>When a profile is selected, users can view all available sections (e.g., Executive Summary, Functional Expertise). Content is grouped into collapsible sections to reduce visual clutter and improve readability. There’s also an Export button to generate a PDF version of the profile for sharing or documentation.</p>
 
