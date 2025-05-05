@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>CSCI 426 - Senior Design Capstone - Fall 2024</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link rel="stylesheet" href="../../assets/css/wa_style.css">
+	<link rel="stylesheet" href="../../assets/css/navstyle.css">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th {background-color: lightblue;}
+		td {padding: 15px; font-size: 14px;}
+	</style>
+</head>
+<body>
+<div id="root">
+	<div class="sidenav">
+		<img src="../../assets/img/SnowLeopard_logo.jpg" width="110" height="110" style="padding-left: 10px; padding-top: 0px;">
+		<a href="./overview.html">Overview</a>
+		<a href="./user_feedback.html">User Feedback</a>
+		<a href="./reqs_spec.html">Reqs Spec</a>
+		<a href="./storyboard.html">Storyboard</a>
+		<a href="./systems_modeling.html">Systems Modeling</a>
+		<a href="./prototype.html">High-fidelity Prototype</a>
+		<a href="./design_crits.html">Design Crits</a>
+	</div>
+	<header id="top" class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-12peh0i" style="background-color: darkblue;">
+		<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2" style="background-color: darkblue;">
+			<div class="MuiToolbar-root MuiToolbar-regular css-8p5sgb" style="background-color: darkblue;">
+				<div class="MuiBox-root css-1p5pnqt" role="navigation" aria-label="Primary">
+					<a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1f5vq29" href="/courses/cse440/22sp/" tabindex="0">
+						<div class="MuiBox-root css-0">CSCI 426 - Software Design & Dev I - Fall 2024</div>
+					</a>
+					<div class="MuiBox-root css-i9gxme"></div>
+					<a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-a6kcvm" href="../../index.html" tabindex="0">
+						<div class="MuiBox-root css-11wbtq8">Projects</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2" style="font-size: 18px;">
+		<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1gop1xy">
+			<div class="MuiBox-root css-13o7eu2">
+				<div class="MuiBox-root css-qwy28t" role="main">
+					<h1>Systems Modeling</h1>
+					<div class="MuiBox-root css-m507i9">
+						<p>In the process of developing our system, we needed a way to visualize how different parts of our architecture are related and interact. We chose to create two core models: an Entity-Relationship (ER) Diagram to show how profile data is structured and related, and a System Workflow Diagram to illustrate the end-to-end movement of profile data through Azure services and internal components.</p>
+					</div>
+					<h3>Entity-Relationship Diagram</h3>
+					<p>This diagram outlines the structure of our database, particularly the relationship between profiles, their contents, and associated section categories. It's used to ensure proper relational mapping and normalization of consultant data.</p>
+					<div style="text-align:center;">
+						<img src="./images/ERdiagram.png" alt="ER Diagram" style="max-height:400px; max-width:100%;">
+						<figcaption style="font-size: 14px;"><em>Model 1. Entity-Relationship Diagram</em></figcaption>
+						<p>It shows how a profile contains multiple section contents, and each section content is identified by a section category. This structure allows dynamic parsing and querying of profile data.</p>
+					</div>
+					<h3>System Workflow Diagram</h3>
+					<p>This diagram details the data flow between SharePoint, Azure services, and our web app. It helps visualize automation pipelines and how updates to profiles trigger our backend API and storage operations.</p>
+					<div style="text-align:center;">
+						<img src="./images/systemWorkFlow.png" alt="System Workflow Diagram" style="max-height:400px; max-width:100%;">
+						<figcaption style="font-size: 14px;"><em>Model 2. System Workflow Diagram</em></figcaption>
+						<p>From uploading PowerPoint profiles in SharePoint, to transforming them into JSON, storing in Azure Blob, and finally pushing to an Azure SQL database, this diagram illustrates how each part connects to support search and export features.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
