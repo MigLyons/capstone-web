@@ -25,7 +25,7 @@
             <a href="./systems_modeling.html">Systems Modeling</a>
             <a href="./prototype.html">High-fidelity Prototype</a>
             <a href="./design_crits.html">Design Crits</a>
-            <a href="./finalimplementation.html">Final Product</a>
+            <a href="./final_implementation.html">Final Product</a>
         </div>
 
         <header id="top" class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-12peh0i" style="background-color: darkblue;">
@@ -48,38 +48,30 @@
             <div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1gop1xy">
                 <div class="MuiBox-root css-13o7eu2">
                     <div class="MuiBox-root css-qwy28t" role="main">
-                        <h1>Snow Leopard</h1>
 
-                        <h2>Mission Statement</h2>
-                        <p>To build a smart, searchable platform that enhances the way Cognizant Team Leads match consultants to projects by leveraging structured profile data from SharePoint. Our goal is to streamline staffing decisions, reduce manual effort, and improve project alignment through efficient search, filtering, and profile insights.</p>
+                        <h1>Final Implementation</h1>
+                        <p>Our final implementation brings together all aspects of our design into a cohesive and interactive web application. Below are screenshots highlighting key components of our deployed system:</p>
 
-                        <h2>Problem Statement</h2>
-                        <p>Cognizant is an IT consulting company that staffs consultants to IT-related projects. Team Leads often rely on word of mouth or digging through SharePoint folders to find consultants with the right skills for a project. Our app fixes that by making profile content stored in SharePoint fully searchable — so Team Leads can quickly find and filter profiles based on technical skills, experience, certifications, and more. The goal is to make staffing decisions faster and more accurate by surfacing the most relevant consultants for each project.</p>
+                        <h3>Login Page</h3>
+                        <img src="./images/finalLogin.png" alt="Login Page" style="max-width:100%; margin-bottom: 10px;" />
+                        <p>The login screen uses Microsoft authentication to verify users before accessing the application. This ensures that only authorized Cognizant employees can view or manage consultant profiles.</p>
 
-                        <h2>Team Members</h2>
-                        <table style="width:100%; text-align:center; border-collapse: separate; border-spacing: 20px 10px;">
-                            <tr>
-                                <th>Name</th>
-                                <th>Photo</th>
-                            </tr>
-                            <tr>
-                                <td>Cass Orr</td>
-                                <td><img src="./images/cass.png" alt="Cass Orr" style="max-width:120px; border-radius: 10px;"></td>
-                            </tr>
-                            <tr>
-                                <td>Kaleb Clemow</td>
-                                <td><img src="./images/kaleb.png" alt="Kaleb Clemow" style="max-width:120px; border-radius: 10px;"></td>
-                            </tr>
-                            <tr>
-                                <td>Madeleine Gallegos Lyons</td>
-                                <td><img src="./images/maddie.jpg" alt="Madeleine Gallegos Lyons" style="max-width:120px; border-radius: 10px;"></td>
-                            </tr>
-                        </table>
+                        <h3>Profile Search</h3>
+                        <img src="./images/finalSearch.png" alt="Search Page" style="max-width:100%; margin-bottom: 10px;" />
+                        <p>Once authenticated, users are taken to the search screen. Here, Team Leads can enter keywords (e.g., "azure", "devops") to filter relevant profiles. Recent searches are also displayed to improve usability and context during staffing sessions.</p>
+
+                        <h3>Search Results</h3>
+                        <img src="./images/finalSearchResults.png" alt="Search Results" style="max-width:100%; margin-bottom: 10px;" />
+                        <p>Search results are displayed in card format, showing consultant names, a brief summary, and a “View Profile” button. This layout allows quick comparison of candidate expertise to make informed staffing decisions.</p>
+
+                        <h3>Full Profile View</h3>
+                        <img src="./images/finalProfileView.png" alt="Profile Detail View" style="max-width:100%; margin-bottom: 10px;" />
+                        <p>When a profile is selected, users can view all available sections (e.g., Executive Summary, Functional Expertise). Content is grouped into collapsible sections to reduce visual clutter and improve readability. There’s also an Export button to generate a PDF version of the profile for sharing or documentation.</p>
+
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 </body>
