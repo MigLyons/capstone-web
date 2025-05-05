@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>CSCI 426 - Senior Design Capstone - Fall 2024</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link rel="stylesheet" href="../../assets/css/wa_style.css">
+	<link rel="stylesheet" href="../../assets/css/navstyle.css">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+</head>
+
+<body>
+
+
+	<div class="main">
+
+		<div id="root">
+
+			<div class="sidenav">
+				<img src="../../assets/img/SnowLeopard_logo.jpg" width="110" height="110"
+					style="padding-left: 10px; padding-top: 0px;">
+				<a href="./overview.html">Overview</a>
+				<a href="./user_feedback.html">User Feedback</a>
+				<a href="./reqs_spec.html">Reqs Spec</a>
+				<a href="./storyboard.html">Storyboard</a>
+				<a href="./systems_modeling.html">Systems Modeling</a>
+				<a href="./prototype.html">High-fidelity Prototype</a>
+				<a href="./design_crits.html">Design Crits</a>
+			</div>
+
+			<header id="top"
+				class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-12peh0i"
+				style="background-color: darkblue;">
+
+				<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2" style="background-color: darkblue; ">
+					<div class="MuiToolbar-root MuiToolbar-regular css-8p5sgb" style="background-color: darkblue; ">
+						<div class="MuiBox-root css-1p5pnqt" role="navigation" aria-label="Primary">
+
+
+							<a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1f5vq29"
+								href="/courses/cse440/22sp/" tabindex="0">
+								<div class="MuiBox-root css-0">CSCI 426 - Software Design & Dev I - Fall 2024</div>
+								<span class="MuiTouchRipple-root css-w0pj6f">
+								</span>
+							</a>
+							<div class="MuiBox-root css-i9gxme">
+							</div>
+
+							<a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-a6kcvm"
+								href="../../../index.html" tabindex="0">
+								<div class="MuiBox-root css-11wbtq8">Projects</div>
+								<span class="MuiTouchRipple-root css-w0pj6f">
+								</span>
+							</a>
+
+
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2" style="font-size: 18px;">
+				<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1gop1xy">
+					<div class="MuiBox-root css-13o7eu2">
+						<div class="MuiBox-root css-qwy28t" role="main">
+
+
+							<h1>Design Crits</h1>
+						
+							<div class="MuiBox-root css-m507i9">
+								<p class="MuiTypography-root MuiTypography-body1 css-lj8hfv">
+
+								</p>
+							</div>
+	
+							<p>Once we had a stable high-fidelity prototype, we wanted to observe how other students in our class (and potential end users of our app) would perform a set of common tasks using our prototoype. In particular, we wanted to learn where they had questions, problems, and concerns with our design. Below is the set of scenarios/tasks that we provided to our classmates during this high-fidelity design crit session. This is followed by some of the most important feedback we gathered and a discussion of how it will impact our future design iterations.
+							</p>
+
+							<h2>Scenario 1</h2>
+
+							<p>A team lead is putting together a group of consultants for a new project.  They want to search Cognizant profiles to find consultants with skill sets to match the project scope.
+							</p>
+							<h4>Tasks:</h4>
+							<ol>
+								<li>Login</li>
+								<li>Navigate to the search screen</li>
+								<li>Search for “Salesforce Developer”</li>
+								<li>Click “Need Help” for AI-generated help available to guide search terms</li>
+								<li>Filter the subsections you would like be considered in your search</li>
+								<li>View the matching consultant profiles</li>
+							</ol>
+							<br>
+
+							<h2>Scenario 2</h2>
+
+							<p>A consultant would like to create a new profile manually within the application.</p>
+							<h4>Tasks:</h4>
+							<ol>
+								<li>Login</li>
+								<li>Navigate to ‘Manage Profiles’ to manually create a profile</li>
+								<li>Enter user information into the subsections of the profile</li>
+								<li>Save profile</li>
+							</ol>
+
+							<h2>Scenario 3</h2>
+
+							<p>A consultant would like to update one of the existing profiles.</p>
+							<h4>Tasks:</h4>
+							<ol>
+								<li>Login</li>
+								<li>Navigate to ‘Manage Profiles’</li>
+								<li>Select ‘Edit’ on a profile from list of current profiles to update</li>
+								<li>Update desired subsections of the profile</li>
+								<li>Save profile</li>
+							</ol>
+
+							
+							<h2>Summary of feedback from in-class Design Crits</h2>
+
+							<p>Below is a list of the most common feedback we received during our design crit session using our high-fidelity prototype. </p>
+							<ul>
+								<li><b>Logo:</b> Change the image used for the Cognizant logo, center of logo should be transparent</li>
+								<li><b>Change Button Text:</b> Change “Need Help” button to used terminology that would more so imply its function to be an AI-assistant tool</li>
+								<li><b>Search Button Arrangement:</b> Change the “Search,” “Filter,” and “Need Help” to not be stacked on top of each other</li>
+								<li><b>Button Icons:</b> Change look of archive button, potentially add a trash icon to signal to the user the action would essentially no longer display that profile within the UI</li>
+								<li><b>Export Button Arrangement:</b> Have the export button be moved to the top, rather then on the bottom</li>
+								<li><b>Profile Section Dropdowns:</b> Have the dropdowns be defaulted to expanded, and allow the user to dismiss or hide specific information. Rather then having the dropdowns be defaulted to hidden</li>
+							</ul>
+
+							To illustrate how this feedback will impact future iterations of our design, we included an annotated screenshot illustrating the problems, alongside a description of how we plan to resolve these particular issues going forward.
+
+							<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
+							<div class="MuiBox-root css-1vp8jwk">
+					
+							<div class="MuiBox-root css-1j8t7mm">
+							<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
+								<center><img src="./images/annotated_search.png" style="max-height:400px;max-width:100%"></center>
+								<figcaption style="font-size: 14px;"><center><em>Team Snow Leopard's prototype Search Screen</em></center></figcaption>
+							
+								<ul>
+									<li><b>Button Arrangement:</b> Place the "Need Help" button underneath the search bar and place the "Filter" button beside the "Search" button. This will make finding the buttons more intuitive rather then having them stacked upon each other.</li>
+									<li><b>Contrast:</b> Making the search bar and background have more contrast to easily see where the borders of the search bar are. Also, created more contrast with the search input text and background of search bar so user can easily read what they have typed.</li>
+									<li><b>Navigation:</b> Add a back button that links to the main page. This functionality can be added either through an additional button or by clicking the Cognizant logo.</li>
+								</ul>
+							
+							</div>
+							</div>
+							</div>
+							</div>
+
+						</div>
+
+					</div>
+
+			</div>
+
+								</div>
+
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>CSCI 426 - Senior Design Capstone - Fall 2024</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link rel="stylesheet" href="../../assets/css/wa_style.css">
+	<link rel="stylesheet" href="../../assets/css/navstyle.css">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<style>
+	table, th, td {
+  		border: 1px solid black;
+  		border-collapse: collapse;
+	}
+	th {background-color: lightblue;}
+	td {padding: 15px; font-size: 14px;}
+	</style>
+</head>
+
+<body>
+
+
+	//<div class="main">
+
+		<div id="root">
+
+			<div class="sidenav">
+				<img src="../../assets/img/SnowLeopard_logo.jpg" width="110" height="110"
+					style="padding-left: 10px; padding-top: 0px;">
+				<a href="./overview.html">Overview</a>
+				<a href="./user_feedback.html">User Feedback</a>
+				<a href="./reqs_spec.html">Reqs Spec</a>
+				<a href="./storyboard.html">Storyboard</a>
+				<a href="./systems_modeling.html">Systems Modeling</a>
+				<a href="./prototype.html">High-fidelity Prototype</a>
+				<a href="./design_crits.html">Design Crits</a>
+			</div>
+
+			<header id="top"
+				class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-12peh0i"
+				style="background-color: darkblue;">
+
+				<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2" style="background-color: darkblue; ">
+					<div class="MuiToolbar-root MuiToolbar-regular css-8p5sgb" style="background-color: darkblue; ">
+						<div class="MuiBox-root css-1p5pnqt" role="navigation" aria-label="Primary">
+
+
+							<a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1f5vq29"
+								href="/courses/cse440/22sp/" tabindex="0">
+								<div class="MuiBox-root css-0">CSCI 426 - Software Design & Dev I - Fall 2024</div>
+								<span class="MuiTouchRipple-root css-w0pj6f">
+								</span>
+							</a>
+							<div class="MuiBox-root css-i9gxme">
+							</div>
+
+							<a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-a6kcvm"
+								href="../../index.html" tabindex="0">
+								<div class="MuiBox-root css-11wbtq8">Projects</div>
+								<span class="MuiTouchRipple-root css-w0pj6f">
+								</span>
+							</a>
+
+
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2" style="font-size: 18px;">
+				<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1gop1xy">
+					<div class="MuiBox-root css-13o7eu2">
+						<div class="MuiBox-root css-qwy28t" role="main">
+
+
+							<h1>Snow Leopard</h1>
+							<h2 id="mission-stmt">Requirements Specification</h2>
+							<div class="MuiBox-root css-m507i9">
+								<p class="MuiTypography-root MuiTypography-body1 css-lj8hfv">Our requirements were refined by a process of data gathering, analysis, and synthesis. We developed functional requirements that define the functions the application should perform, data requirements that define the data that the app should store and manipulate, non-functional requirements that define attributes of the app, and hardware/software requirements that define what we know of what hardware the app will need to be able to run on and what software the app will need to run with.</p>
+								<p class="MuiTypography-root MuiTypography-body1 css-lj8hfv">We ranked these requirements from 1 to 5 in order of importance. Our level 1 requirements are our Minimum Viable Product; Cognizant determined that our MVP is making the profile repository searchable so all our searching functions are level 1.
+								Our level 2 requirements are things that we expect to also be able to finish, but are less essential. Levels 3 and 4 are for features that would be nice to have but are not a huge priority, and level 5 would define features that are being documented for 
+							later iterations of the project. </p>
+								<br>
+								<table>
+									<caption style="color: darkblue; font-size: 20px;"> Functional Requirements</caption>
+ 									<tr>
+    									<th>Category</th>
+    									<th>Description</th>
+    									<th>Priority</th>
+  									</tr>
+									<tr>
+										<td>Update Profile</td>
+										<td>Users should be able to update their own profiles</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to enter their state into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to enter their name into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to enter their work title into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to enter a description into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to enter an email into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Update Profile, Create Profile</td>
+										<td>Users should be able to enter experience into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Update Profile, Create Profile</td>
+										<td>Users should be able to enter projects into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to enter mobility into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Update Profile, Create Profile</td>
+										<td>Users should be able to enter functional expertise into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Update Profile, Create Profile</td>
+										<td>Users should be able to enter technical expertise into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to enter languages into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to enter methodologies into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to enter industry sectors into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to enter certifications into a profile.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to create the Executive Summary portion of their profile</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile</td>
+										<td>Users should be able to generate a template for their profile with text boxes formatted based on the current Cognizant Revenue Management profile template</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile</td>
+										<td>Users should be able to expand the experience section of their profile beyond what is currently available in the Experience section of the template.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>AI</td>
+										<td>Users should be prompted to use terms from a master list of certain skills that are common needs for projects</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile, Update Profile</td>
+										<td>Users should be able to export profile to .ppt and download.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Create Profile</td>
+										<td>Users should be able to manually create a profile from scratch</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Update Profile</td>
+										<td>Users should be able to import a profile to update/upload.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>AI</td>
+										<td>Users should be able to see a high level summary of the profiles returned by a query</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>AI</td>
+										<td>Users should be able to put in terms and have the system create and execute a query for those terms</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>System Maintenance</td>
+										<td>Users should be able to update the template used for creation</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Login</td>
+										<td>The user should be able to login with their Microsoft username and password.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Search Profile</td>
+										<td>The user should be able to search profiles</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Search Profile, AI</td>
+										<td>The user should be able to enter text within the search bar, and by invoking the help button, an AI-generated search suggestion text should appear below the search bar.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>AI, Search Profile</td>
+										<td>The user should be able to accept or deny the AI search suggestion. Accepting the suggestion should insert the AI-generated text into the search bar. Denying the suggestion should close the AI suggestion box.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Search Profile</td>
+										<td>The user should be able to see relevant profiles to what they have searched. These results should include the name, contact information, and an AI-generated summary on how the user is relevant to the search.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Search Profile</td>
+										<td>The user should be able to invoke one of these profile result boxes and open an expanded view of the person's profile.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Search Profile, AI</td>
+										<td>The user should be able to view the same AI-generated summary on how the user is relevant to their search at the top of the profile expansion view.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Search Profile</td>
+										<td>The user should be able to see dropdown view options on each section of the person's profile. The user can invoke these dropdown buttons to view specific information or hide it while they are reading through someone's profile.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Export Profile</td>
+										<td>The user should be able to invoke the export button on the top right of the profile expansion page to export the profile they are viewing as a file on their local desktop. The user should be redirected to an exportation view where they can pick the file type they would wish to export the file as on their machine.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Search Profile</td>
+										<td>The user should be able to filter the search results by profile section</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Remove Profile</td>
+										<td>The user should be able to remove their profile from the database.</td>
+										<td>Level 2</td>
+									</tr>									
+								</table>
+								<br>
+								<br>
+								<table>
+									<caption style="color: darkblue; font-size:20px;"> Non-functional Requirements </caption>
+									<tr>
+										<th>Category</th>
+										<th>Description</th>
+										<th>Priority</th>
+									</tr>
+									<tr>
+										<td>Create Profile</td>
+										<td>The system should allow new users to create a profile within an hour</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Update Profile</td>
+										<td>The system should allow users to update their profile within an hour.</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Search Profile</td>
+										<td>The system should make searching for a consultant with a specific skill take less time than asking around via Teams (e.g. less than 1 business day).</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Search Profile</td>
+										<td>The system should restrict access to profiles to only Team Leads</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Search Profile</td>
+										<td>The system should display search results within a few seconds</td>
+										<td>Level 2</td>
+									</tr>
+									<tr>
+										<td>Search Profile</td>
+										<td>The system should be accessible on major web browsers</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should maintain synchronized data between SharePoint and the database updating no less than every 24 hours.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Create Profile</td>
+										<td>The system should implement measures to protect confidentiality regarding personal employee data</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>AI</td>
+										<td>The system should check for white text to avoid fraudulent keyword matching</td>
+										<td>Level 4</td>
+									</tr>
+									
+									
+								</table>
+								<br>
+								<br>
+								<table>
+									<caption style="color: darkblue; font-size: 20px;"> Data Requirements</caption>
+ 									<tr>
+    									<th>Category</th>
+    									<th>Description</th>
+    									<th>Priority</th>
+  									</tr>
+  									<tr>
+										<td>Store Profile</td>
+										<td>The system should store technical expertise data on each profile</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store functional expertise data on each profile</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store experience data on each profile</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store industry sectors data on each profile</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store projects data on each profile</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store ownership data on each profile</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store availability data on each profile</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store mobility data on each profile</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store executive summary data on each profile</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store the first and last name of the profile owner.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store the job title of the profile owner.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store a description on each profile.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store an AI-generated summary on each profile that results from the user searching specific criteria from the profiles.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store the contact information of the profile owner on each profile.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store a unique identifier for each profile.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should store a unique identifier for each employee.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should support a one-to-many relationship between employees and profiles. (Some employees have multiple profiles.)</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system is able to delete a profile from the Sharepoint repository.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system is able to replace a profile with the updated version when the user updates their profile.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system should be able to store the username and password associated with the user.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system is able to encrypt the password data of the user.</td>
+										<td>Level 1</td>
+									</tr>
+									<tr>
+										<td>Store Profile</td>
+										<td>The system is able to delete a user (need to specify who would have the credentials to do, whether we make a local admin account or another method).</td>
+										<td>Level 2</td>
+									</tr>
+									
+  
+								</table>
+								<br>
+								<p><h3 style="color: darkblue; font-size: 20px;">Hardware and Software requirements</h3>
+									We are in the process of finding solutions for our proposed development plan, but there are currently three hardware and software requirements that will be used:
+									<ul>
+										<li> The solution must function on modern PCs and Macs </li>
+										<li> Microsoft CoPilot is required for the AI aspects of the solution </li>
+										<li> Microsoft SharePoint and SharePoint API access is required. </li>
+									</ul>
+								</p>
+
+
+
+							</div>
+
+								</div>
+
+</body>
+
+</html>
